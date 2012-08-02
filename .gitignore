@@ -1,7 +1,4 @@
-*.rbc
-*.sassc
 .sass-cache
-capybara-*.html
 .rspec
 /.bundle
 /vendor/bundle
@@ -13,4 +10,6 @@ capybara-*.html
 /spec/tmp/*
 **.orig
 rerun.txt
-pickle-email-*.html
+pkg
+/.idea/
+/*.rvmrc
