@@ -12,7 +12,7 @@ gem 'rails', '~> 3.2.0'
 group :development do
   gem 'bundler',      '~> 1.1.0'
   gem 'capybara',     '~> 1.1.0'
-  gem 'guard',        '~> 1.2.0'
+  gem 'guard',        '~> 1.3.0'
   gem 'guard-rspec',  '~> 1.2.0'
   gem 'guard-spork',  '~> 1.1.0'
   gem 'jeweler',      '~> 1.8.4'
