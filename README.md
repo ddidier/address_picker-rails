@@ -30,7 +30,7 @@ Since `jquery-addresspicker` uses jQuery-UI themes, you may use [jquery-ui-theme
 
 ## Usage
 
-[In progress] a demo application
+You may also refer to this little [demo application](http://address-picker-rails-demo.herokuapp.com) on Heroku.
 
 ### Model
 
