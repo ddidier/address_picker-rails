@@ -5,27 +5,67 @@
 
 Gem::Specification.new do |s|
   s.name = "address_picker-rails"
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David DIDIER"]
-  s.date = "2012-07-25"
+  s.date = "2012-08-22"
   s.description = "An address picker for Rails with autocompletion and map picking (adapted from https://github.com/sgruhier/jquery-addresspicker)"
-  s.email = "c_inconnu@yahoo.fr"
+  s.email = "c_inconnu1@yahoo.fr"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
   ]
   s.files = [
     ".document",
-    ".rspec",
     "Gemfile",
+    "Gemfile.lock",
+    "Guardfile",
     "LICENSE.txt",
     "README.md",
     "Rakefile",
     "VERSION",
+    "address_picker-rails.gemspec",
     "lib/address_picker-rails.rb",
-    "spec/spec_helper.rb"
+    "lib/address_picker-rails/engine.rb",
+    "spec/dummy/README.rdoc",
+    "spec/dummy/Rakefile",
+    "spec/dummy/app/assets/javascripts/application.js",
+    "spec/dummy/app/assets/stylesheets/application.css",
+    "spec/dummy/app/controllers/application_controller.rb",
+    "spec/dummy/app/helpers/application_helper.rb",
+    "spec/dummy/app/mailers/.gitkeep",
+    "spec/dummy/app/models/.gitkeep",
+    "spec/dummy/app/views/layouts/application.html.erb",
+    "spec/dummy/config.ru",
+    "spec/dummy/config/application.rb",
+    "spec/dummy/config/boot.rb",
+    "spec/dummy/config/database.yml",
+    "spec/dummy/config/environment.rb",
+    "spec/dummy/config/environments/development.rb",
+    "spec/dummy/config/environments/production.rb",
+    "spec/dummy/config/environments/test.rb",
+    "spec/dummy/config/initializers/backtrace_silencers.rb",
+    "spec/dummy/config/initializers/inflections.rb",
+    "spec/dummy/config/initializers/mime_types.rb",
+    "spec/dummy/config/initializers/secret_token.rb",
+    "spec/dummy/config/initializers/session_store.rb",
+    "spec/dummy/config/initializers/wrap_parameters.rb",
+    "spec/dummy/config/locales/en.yml",
+    "spec/dummy/config/routes.rb",
+    "spec/dummy/lib/assets/.gitkeep",
+    "spec/dummy/log/.gitignore",
+    "spec/dummy/log/.gitkeep",
+    "spec/dummy/public/404.html",
+    "spec/dummy/public/422.html",
+    "spec/dummy/public/500.html",
+    "spec/dummy/public/favicon.ico",
+    "spec/dummy/script/rails",
+    "spec/spec_helper.rb",
+    "vendor/assets/javascripts/address_picker-rails.js",
+    "vendor/assets/javascripts/address_picker.js",
+    "vendor/assets/javascripts/address_picker_gmaps.js",
+    "vendor/assets/stylesheets/address_picker-rails.css"
   ]
   s.homepage = "http://github.com/ddidier/address_picker-rails"
   s.licenses = ["MIT"]
@@ -40,7 +80,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<rails>, ["~> 3.2.0"])
       s.add_development_dependency(%q<bundler>, ["~> 1.1.0"])
       s.add_development_dependency(%q<capybara>, ["~> 1.1.0"])
-      s.add_development_dependency(%q<guard>, ["~> 1.2.0"])
+      s.add_development_dependency(%q<guard>, ["~> 1.3.0"])
       s.add_development_dependency(%q<guard-rspec>, ["~> 1.2.0"])
       s.add_development_dependency(%q<guard-spork>, ["~> 1.1.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
@@ -51,7 +91,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rails>, ["~> 3.2.0"])
       s.add_dependency(%q<bundler>, ["~> 1.1.0"])
       s.add_dependency(%q<capybara>, ["~> 1.1.0"])
-      s.add_dependency(%q<guard>, ["~> 1.2.0"])
+      s.add_dependency(%q<guard>, ["~> 1.3.0"])
       s.add_dependency(%q<guard-rspec>, ["~> 1.2.0"])
       s.add_dependency(%q<guard-spork>, ["~> 1.1.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
@@ -63,7 +103,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rails>, ["~> 3.2.0"])
     s.add_dependency(%q<bundler>, ["~> 1.1.0"])
     s.add_dependency(%q<capybara>, ["~> 1.1.0"])
-    s.add_dependency(%q<guard>, ["~> 1.2.0"])
+    s.add_dependency(%q<guard>, ["~> 1.3.0"])
     s.add_dependency(%q<guard-rspec>, ["~> 1.2.0"])
     s.add_dependency(%q<guard-spork>, ["~> 1.1.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
