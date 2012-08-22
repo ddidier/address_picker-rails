@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = "address_picker-rails"
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David DIDIER"]
   s.date = "2012-08-22"
   s.description = "An address picker for Rails with autocompletion and map picking (adapted from https://github.com/sgruhier/jquery-addresspicker)"
-  s.email = "c_inconnu1@yahoo.fr"
+  s.email = "c_inconnu2@yahoo.fr"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
