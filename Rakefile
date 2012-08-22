@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.license     = "MIT"
   gem.summary     = %Q{An address picker with autocompletion and map picking}
   gem.description = %Q{An address picker for Rails with autocompletion and map picking (adapted from https://github.com/sgruhier/jquery-addresspicker)}
-  gem.email       = "c_inconnu1@yahoo.fr"
+  gem.email       = "c_inconnu2@yahoo.fr"
   gem.authors     = ["David DIDIER"]
   # dependencies defined in Gemfile
 end
