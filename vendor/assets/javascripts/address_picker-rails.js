@@ -112,22 +112,38 @@ AddressPickerRails.Picker = function (options) {
     };
 
     /**
-     * Apply the address picker to the fields identified by the ID prefix.
+     * Apply the address picker to the existing fields identified by the ID prefix.
      */
     var define = function () {
         //console.debug("Defining address picker with ID prefix '%s'", settings.idPrefix);
 
-        picker = $("#" + settings.idPrefix).addresspicker({
-            elements:{
-                map     :"#" + settings.idPrefix + "_map",
-                lat     :"#" + settings.idPrefix + "_latitude",
-                lng     :"#" + settings.idPrefix + "_longitude",
-                locality:"#" + settings.idPrefix + "_locality",
-                country :"#" + settings.idPrefix + "_country"
+        var elements = {};
+        var element_suffixes = {
+            map     : "_map",
+            lat     : "_latitude",
+            lng     : "_longitude",
+            locality: "_locality",
+            country : "_country"
+        };
+
+        for (var key in element_suffixes)
+        {
+            var element = $("#" + settings.idPrefix + element_suffixes[key]);
+
+            if (element.length) {
+                //console.debug("Found '%s' element with ID '%s'", key, element.id);
+                elements[key] = element;
             }
+        }
+
+        picker = $("#" + settings.idPrefix).addresspicker({
+            elements: elements
         });
-        picker.addresspicker("marker").setVisible(true);
-        picker.addresspicker("updatePosition");
+
+        if (elements['map']) {
+            picker.addresspicker("marker").setVisible(true);
+            picker.addresspicker("updatePosition");
+        }
     };
 
     /**

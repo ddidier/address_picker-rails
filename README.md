@@ -30,7 +30,7 @@ Since `jquery-addresspicker` uses jQuery-UI themes, you may use [jquery-ui-theme
 
 ## Usage
 
-You may also refer to this little [demo application](http://address-picker-rails-demo.herokuapp.com) on Heroku.
+You may also take a look at this simple [demo application](https://github.com/ddidier/address_picker-rails-demo) which is also [deployed on Heroku](http://address-picker-rails-demo.herokuapp.com).
 
 ### Model
 
@@ -61,7 +61,7 @@ In your model:
 
 ### View
 
-Consider the following example:
+In the following example the only mandatory field is the address (the first one):
 
     <div class="field">
       <%= f.label :address %><br />
