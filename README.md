@@ -26,7 +26,7 @@ In your JavaScript manifest `application.js` add:
 Since `jquery-addresspicker` uses jQuery-UI themes, you may use [jquery-ui-themes-rails](https://github.com/fatdude/jquery-ui-themes-rails) instead of defining your own theme:
 
 * add to your Gemfile: `gem 'jquery-ui-themes'`
-* add to you CSS manifest `application.css`: ` *= require jquery-ui/<theme_name>`
+* add to your CSS manifest `application.css`: ` *= require jquery-ui/<theme_name>`
 
 ## Usage
 
