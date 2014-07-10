@@ -119,11 +119,12 @@ AddressPickerRails.Picker = function (options) {
 
         var elements = {};
         var element_suffixes = {
-            map     : "_map",
-            lat     : "_latitude",
-            lng     : "_longitude",
-            locality: "_locality",
-            country : "_country"
+            map                           : "_map",
+            lat                           : "_latitude",
+            lng                           : "_longitude",
+            locality                      : "_locality",
+            country                       : "_country",
+            administrative_area_level_1   : "_state"
         };
 
         for (var key in element_suffixes)
