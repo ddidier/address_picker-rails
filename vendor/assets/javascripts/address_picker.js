@@ -44,12 +44,13 @@ AddressPickerRails.OriginalPicker = function (my) {
                         mapTypeId  :google.maps.MapTypeId.ROADMAP
                     },
                     elements           :{
-                        map     :false,
-                        lat     :false,
-                        lng     :false,
-                        locality:false,
-                        country :false,
-                        type    :false
+                        map                         :false,
+                        lat                         :false,
+                        lng                         :false,
+                        locality                    :false,
+                        country                     :false,
+                        administrative_area_level_1 :false,
+                        type                        :false
                     }
                 },
 
@@ -87,6 +88,7 @@ AddressPickerRails.OriginalPicker = function (my) {
                     this.lng = $(this.options.elements.lng);
                     this.locality = $(this.options.elements.locality);
                     this.country = $(this.options.elements.country);
+                    this.administrative_area_level_1 = $(this.options.elements.administrative_area_level_1);
                     this.type = $(this.options.elements.type);
                     if (this.options.elements.map) {
                         this.mapElement = $(this.options.elements.map);
@@ -167,6 +169,9 @@ AddressPickerRails.OriginalPicker = function (my) {
                     }
                     if (this.country) {
                         this.country.val(this._findInfo(address, 'country'));
+                    }
+                    if (this.administrative_area_level_1) {
+                        this.administrative_area_level_1.val(this._findInfo(address, 'administrative_area_level_1'));
                     }
                     if (this.type) {
                         this.type.val(address.types[0]);
