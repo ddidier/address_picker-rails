@@ -143,7 +143,6 @@ AddressPickerRails.OriginalPicker = function (my) {
                 _findInfo:function (result, type) {
                     for (var i = 0; i < result.address_components.length; i++) {
                         var component = result.address_components[i];
-                        console.log(component.types);
                         if (component.types.indexOf(type) != -1) {
                             return component.long_name;
                         }
