@@ -36,7 +36,12 @@ AddressPickerRails.GMaps = function () {
         //console.debug("Loading GMaps API");
 
         var script = document.createElement("script");
-        script.src = "http://maps.google.com/maps/api/js?sensor=false&callback=AddressPickerRails.GMaps.onLoad";
+        if (window.location.protocol === "https:") {
+          script.src = "https://maps.google.com/maps/api/js?sensor=false&callback=AddressPickerRails.GMaps.onLoad";
+        } else {
+          script.src = "http://maps.google.com/maps/api/js?sensor=false&callback=AddressPickerRails.GMaps.onLoad";
+        }
+
         script.type = "text/javascript";
 
         callbacks.push(callback);
