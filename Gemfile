@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 # ------------------------------------------------------------------------------
 # Dependencies required to use the gem.
-gem 'rails', '~> 3.2.0'
+gem 'rails', '~> 3.2.17'
 
 
 
