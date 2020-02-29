@@ -42,7 +42,7 @@ GEM
     coderay (1.0.9)
     diff-lcs (1.2.1)
     erubis (2.7.0)
-    ffi (1.4.0)
+    ffi (1.11.1)
     git (1.2.5)
     guard (1.6.2)
       listen (>= 0.6.0)
